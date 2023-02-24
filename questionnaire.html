@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <script src="https://cdn.plot.ly/plotly-2.2.0.min.js"></script> 
+     <script src="https://cdn.jsdelivr.net/npm/danfojs@1.0.2/lib/bundle.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body style="background-image: url('bkgd.png'); background-attachment: fixed;">
+      <div>
+      <div class="navbar">
+        <a href="#default" class="logo">Minerva's List </a>
+        <div class="header-right">
+          <a class="active" href="index.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </div>
+
+        <a href="#default" class="logo">Minerva's List </a>
+        <div class="header-right">
+          <a class="active" href="index.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="#about">About</a>
+        </div>
+      </div>
+    </div>
+
+    <div class = "row">
+      <div class = "column">
+        <div id="plot_div"></div>
+      </div>
+      
+      <div class = "column">
+        <div id = "entireSurvey">
+          <form>
+            <div class = "form-control">
+              <label> What type of Scholarships would you be interested in?
+                <br>
+        				<small>(Check all that apply)</small>
+        			</label>
+              <label for="inp-1">
+          				<input type="checkbox" value="a"
+          					name="category">Academic</input>
+              </label>
+                <label>
+          				<input type="checkbox" value="s" name="category">Community Service</input>
+                </label>
+          			<label>
+          				<input type="checkbox" value="w" name="category" >Writing</input>
+                </label>
+          			<label>
+          				<input type="checkbox" value="v" name="category">Video</input>
+                </label>
+          			<label for="inp-5">
+          				<input type="checkbox"
+          					value="c" name="category">College-Specific</input>
+                </label>
+          			<label for="inp-6">
+          				<input type="checkbox" value="e" name="category">STEM</input>
+                </label> 
+            </div>
+        </form>
+          
+        <form>
+          <label>
+            How Many Scholarships would you like to display?
+          </label>
+          <div>
+            <div>
+              <input id = "numOfScho" class="quantity" min="0" placeholder="0" name="quantity" value="10" type="number">
+            </div>
+        </div>
+        </form>
+    
+        <form>
+          <label>
+              How many <b>weeks</b> would you like to prepare your applications?
+          </label>
+          <div>
+            <div>
+              <input id = "prepTime" class="quantity" min="0" placeholder="0" name="quantity" value="1" type="number">
+            </div>
+          </div>
+        </form>
+    
+    <!--       <form action> -->
+            <button id = "submit" onclick="printStuff(cat)">Submit</button>
+      </div>
+    </div>
+    
+    <div id = "test"></div>
+    <div class = "row">
+      <div style="visibility: hidden;" id = "plz-work"></div>
+    </div>
+    </div>
+    
+    </div>
+    <script src="leanOnMe.js"></script>
+  </body>
+</html>

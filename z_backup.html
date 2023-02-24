@@ -1,0 +1,217 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Build a Survey Form using HTML and CSS
+	</title>
+
+	<style>
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #33CCFF;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #33CCFF;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+  <!-- try to link external stylesheet
+  <link rel="stylesheet" href="style.css">
+  -->
+</head>
+
+<body>
+	<h1>Scholarship Schmoney Questionnaire</h1>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+        name="name"
+				placeholder="Enter your name" />
+		</div>
+    
+	<!-- Details -->
+		<div class="form-control">
+			<label for="gpa" id="label-name">
+				GPA
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="gpa"
+        name="gpa"
+				placeholder="Enter your gpa" />
+		</div>
+    
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Age
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="age"
+        name="age"
+				placeholder="Enter your age" />
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				What is your current grade level?
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value=""></option>
+        <option value="Freshman">Freshman</option>
+				<option value="Sophmore">Sophmore</option>
+        <option value="Junior">Junior</option>
+        <option value="Senior">Senior</option>
+			</select>
+		</div>
+		<div class="form-control">
+			<label> What type of Scholarships would you be interested in?
+        <br>
+				<small>(Check all that apply)</small>
+			</label>
+			<!-- Input Type Checkbox -->
+			<label for="inp-1">
+				<input type="checkbox"
+					name="s1">Academic</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="s2">Community Service</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="s3">Writing</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="s4">Video</input></label>
+			<label for="inp-5">
+				<input type="checkbox"
+					name="s5">College-Specific</input></label>
+			<label for="inp-6">
+				<input type="checkbox"
+					name="s6">STEM</input></label>
+      
+		<br>
+    <div class = "form-control">
+      <label> What kind of awards are you looking for?
+        <br>
+        <small> (Check all that apply)</small>
+      </label>
+       <!-- Checkbox type beat -->
+      <label for="awd-s">
+        <input type = "checkbox"
+          name = "as">Small awards (below $1000)</input>  
+      </label>
+      <label for="awd-m">
+        <input type = "checkbox"
+          name = "am">Medium awards (less than $10,000)</input>  
+      </label>
+        <label for="awd-l">
+        <input type = "checkbox"
+          name = "al">Large awards (above $10,000)</input>  
+      </label>
+		<!-- Multi-line Text Input Control -->
+<!-- 		<button type="submit" value="submit" id = "formSubmit">
+			Submit
+		</button> -->
+    <button type="submit" id="formSubmit" onclick="printFun()">Submit</button>
+	</form>
+  <script src = "script.js">
+    //     // get the form element from dom
+    // const formElement = document.querySelector('#form')
+
+    // // convert the form to JSON
+    // const getFormJSON = (form) => {
+    //   const data = new FormData(form);
+    //   return Array.from(data.keys()).reduce((result, key) => {
+    //     result[key] = data.get(key);
+    //     return result;
+    //   }, {});
+    // };
+
+    // // handle the form submission event, prevent default form behaviour, check validity, convert form to JSON
+    // const handler = (event) => {
+    //   event.preventDefault();
+    //   const valid = formElement.reportValidity();
+    //   if (valid) {
+    //     const result = getFormJSON(formElement);
+    //     console.log(result)
+    //   }
+    // }
+
+    // formElement.addEventListener("submit", handler)
+  </script>
+</body>
+
+</html>

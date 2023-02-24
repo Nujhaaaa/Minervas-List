@@ -1,0 +1,137 @@
+button {
+  background-color: #d69ef5;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin:2px 2px;
+  border-radius: 8px;
+  box-shadow: 1px 2px black;
+}
+
+button:hover {
+  color:#000000;
+  background-color:#FFFFFF;
+  box-shadow: 1px 2px #826464;
+  transition: all 2s ease;
+}
+
+.navbar {
+  overflow: hidden;
+  text-align: center;
+  background-color: #9db8d2;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #050505;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.navbar a.logo:hover{
+  background: #9db8d1;
+}
+.main {
+  margin-top: 30px; 
+}
+
+/* Styling the Form (Color, Padding, Shadow) */
+#entireSurvey {
+	background-color: #9db8d1;
+	font-family: Verdana;
+	text-align: center;
+}
+
+form {
+	background-color: #fff;
+	max-width: 500px;
+	margin: 50px auto;
+	padding: 30px 20px;
+	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling form-control Class */
+.form-control {
+	text-align: left;
+	margin-bottom: 25px;
+}
+
+/* Styling form-control Label */
+.form-control label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+/* Styling form-control input, select, textarea */
+.form-control input, .form-control select, .form-control textarea
+{
+	border: 1px solid #777;
+	border-radius: 2px;
+	font-family: inherit;
+	padding: 10px;
+	display: block;
+	width: 95%;
+}
+
+/* Styling form-control Radio button and Checkbox */
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+	display: inline-block;
+	width: auto;
+}
+
+.row {
+  width: 100%;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  display: table-cell;
+}
+
+#group:hover {
+  color:#DA70D6;
+  transition: all 1s ease;
+}
+
+#plz-work {
+  font-weight: bold;
+  color: black;
+  margin: 75px;
+  padding: 50px;
+  background: white;
+  border-radius: 20px;
+}
+
+#plz-work h1 {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  margin: auto;
+}
+
+#main_header {
+  font-size: 300%;
+  font-weight: 900;
+  color: black;
+}
